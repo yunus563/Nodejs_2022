@@ -2,7 +2,7 @@
 Nodejs examples
 
 
-<!-- What was used -->
+What was used   
 
 -PostgreSQL   
 -Controllers   
