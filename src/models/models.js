@@ -3,9 +3,10 @@ const { DataTypes } = require('sequelize')
 
 
 const User = sequelize.define('user', {
-  id: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
-  email: { type: DataTypes.STRING, unique: true },
-  role: { type: DataTypes.STRING, defaultValue: "USER" }
+  id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+  email: {type: DataTypes.STRING, unique: true,},
+  role: {type: DataTypes.STRING, defaultValue: "USER"},
+  password: {type: DataTypes.STRING},
 })
 
 const Basket = sequelize.define('basket', {
