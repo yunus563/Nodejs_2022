@@ -1,6 +1,4 @@
 # Nodejs_2022
-Nodejs examples
-
 
 What was used   
 
@@ -13,9 +11,3 @@ ApiErrors
 API   
 Api filters   
 JWT Authorization   
-
-
-package.json 
--express          
--body-parser      
--sequelize 
