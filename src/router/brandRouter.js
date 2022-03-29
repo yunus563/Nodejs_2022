@@ -2,12 +2,13 @@ const Router = require('express')
 const router = new Router()
 
 const brandController = require('../controllers/brandController')
+const roleMiddleware = require('../middleware/RoleMiddleware')
 
 
 
 
 
-router.post('/',brandController.Create)
+router.post('/',roleMiddleware("ADMIN"), brandController.Create)
 router.get('/',brandController.GetAll)
 
 

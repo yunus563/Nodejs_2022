@@ -46,11 +46,8 @@ class UserController {
   }
 
   async check(req, res, next) {
-    const {id} = req.query
-    if(!id){
-      return next(ApiError.badRequest('Id topilmadi'))
-    }
-    res.json({message:"Id topildi", id})
+    const token = gerenateToken(req.user.id,req.user.email,req.user.role)
+    res.json({message:"Token generate... Status: OK "})
   }
 
 }
